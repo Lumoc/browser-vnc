@@ -7,8 +7,8 @@ rm /tmp/.X11-unix/X*
 rm /tmp/.X*-lock
 
 
-#add xfce4 startup to xstartup config file
-#echo "lxpanel &" >> ~/.vnc/xstartup
+#add lxde startup to xstartup config file
+echo "lxpanel &" >> ~/.vnc/xstartup
 
 #run vncserver in background
 /usr/bin/vncserver :1 -geometry 1440x900& 
