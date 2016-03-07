@@ -4,18 +4,13 @@ FROM ubuntu:14.04
 RUN apt-get -y update
 RUN apt-get -y install --no-install-recommends lubuntu-core
 RUN apt-get -y install \
-	#gnome-icon-theme-full \
-	#tango-icon-theme \
-	#metacity \
 	lxterminal \
 	vnc4server \
 	fonts-droid \
-	#novnc \
 	vim \
 	git \
 	wget \
 	firefox \
-	#firefox-locale-zh-hant \
 	libxss1 \
 	libappindicator1 \
 	libindicator7 \
@@ -37,7 +32,7 @@ ADD https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb /s
 RUN dpkg -i '/src/google-chrome-stable_current_amd64.deb' && \
 	rm -rf /src/*.deb
 ADD google-chrome.desktop /usr/share/applications/google-chrome.desktop
-RUN mkdir ~/.chrome-data
+RUN mkdir ~/chrome-data
 
 # set vncserver password
 RUN /bin/echo -e "123456\n123456\n\n" | vncpasswd
