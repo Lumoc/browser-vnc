@@ -8,7 +8,7 @@
 echo "lxpanel &" >> ~/.vnc/xstartup
 
 #run vncserver in background
-/usr/bin/vncserver -geometry 1440x900 -depth 16& 
+/usr/bin/vncserver :1 -geometry 1440x900& 
 
 cp /opt/noVNC/vnc_auto.html /opt/noVNC/index.html
 
