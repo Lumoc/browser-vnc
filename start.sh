@@ -3,6 +3,9 @@
 #initialize vnc
 /usr/bin/vncserver
 /usr/bin/vncserver -kill :1
+rm /tmp/.X11-unix/X*
+rm /tmp/.X*-lock
+
 
 #add xfce4 startup to xstartup config file
 echo "lxpanel &" >> ~/.vnc/xstartup
