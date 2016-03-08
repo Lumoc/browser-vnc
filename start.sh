@@ -1,13 +1,13 @@
 #!/bin/bash
 
-#initialize vnc
-#/usr/bin/vncserver
-#/usr/bin/vncserver -kill :1
+# initialize vnc
+/usr/bin/vncserver
+/usr/bin/vncserver -kill :1
 rm /tmp/.X11-unix/X*
 rm /tmp/.X*-lock
 
 
-#add lxde startup to xstartup config file
+# add lxdepanel into xstartup
 echo "lxpanel &" >> ~/.vnc/xstartup
 
 #run vncserver in background
