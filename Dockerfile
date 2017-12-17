@@ -39,7 +39,7 @@ RUN mkdir ~/chrome-data
 RUN /bin/echo -e "Hugo12345\nHugo12345\n\n" | vncpasswd
 
 # install noVNC
-RUN cd /opt && git clone git://github.com/kanaka/noVNC
+RUN cd /opt && git clone git://github.com/Lumoc/noVNC
 
 # vncserver port
 EXPOSE 5901
