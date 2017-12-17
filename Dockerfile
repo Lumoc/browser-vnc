@@ -23,7 +23,7 @@ RUN apt-get -y install \
 	gconf-service-backend \
 	gconf2-common \
 	libgconf-2-4 \
-	netstat \
+	net-tools \
 	python
 	
 RUN apt-get clean
