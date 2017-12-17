@@ -1,5 +1,5 @@
 
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 
 RUN apt-get -y update
 RUN apt-get -y install --no-install-recommends lubuntu-core
@@ -35,7 +35,7 @@ ADD google-chrome.desktop /usr/share/applications/google-chrome.desktop
 RUN mkdir ~/chrome-data
 
 # set vncserver password
-RUN /bin/echo -e "123456\n123456\n\n" | vncpasswd
+RUN /bin/echo -e "Hugo12345\nHugo12345\n\n" | vncpasswd
 
 # install noVNC
 RUN cd /opt && git clone git://github.com/kanaka/noVNC
