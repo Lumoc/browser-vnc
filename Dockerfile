@@ -6,7 +6,7 @@ RUN apt-get -y install --no-install-recommends lubuntu-core
 RUN apt-get -y install \
 	lxterminal \
 	vnc4server \
-	fonts-droid \
+	fonts-droid-fallback \
 	vim \
 	git \
 	wget \
